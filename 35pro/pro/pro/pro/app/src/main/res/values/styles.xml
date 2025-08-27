@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Tema base -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Personaliza aquí tu tema si lo deseas -->
+    </style>
+
+    <!-- Estilo para el ícono dentro del botón -->
+    <style name="TableroButtonIcon">
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+    </style>
+
+    <!-- Estilo para el texto dentro del botón -->
+    <style name="TableroButtonText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- Contenedor para los botones en modo GRID (vertical) -->
+    <style name="TableroButtonContainer">
+        <item name="android:layout_width">0dp</item> <!-- para usar peso en grid -->
+        <item name="android:layout_height">160dp</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+        <item name="android:clickable">true</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:background">@drawable/bg_tablero_button</item>
+    </style>
+
+    <!-- Contenedor para los botones en fila HORIZONTAL (barra scroll) -->
+    <style name="TableroButtonContainerHorizontal">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">100dp</item> <!-- un poco más bajo -->
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+        <item name="android:clickable">true</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:background">@drawable/bg_tablero_button</item>
+    </style>
+
+
+
+
+
+
+
+
+
+
+    <!-- Estilo general para botones de categoría principal -->
+    <style name="CategoryButtonStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:paddingStart">12dp</item>
+        <item name="android:paddingEnd">12dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:background">@drawable/rounded_button</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+    </style>
+
+    <!-- Estilo general para botones de subcategorías -->
+    <style name="SubCategoryButtonStyle">
+        <item name="android:layout_width">140dp</item>
+        <item name="android:layout_height">120dp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+        <item name="android:background">@drawable/border_bottom_yellow</item>
+    </style>
+
+
+
+</resources>

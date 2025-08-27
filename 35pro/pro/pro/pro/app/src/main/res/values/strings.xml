@@ -1,0 +1,46 @@
+<resources>
+    <!-- App -->
+    <string name="app_name">Pro</string>
+
+    <!-- Login -->
+    <string name="login">Iniciar sesión</string>
+    <string name="username">Usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="go_to_register">¿No tienes cuenta? Regístrate</string>
+
+    <!-- Register -->
+    <string name="register">Registrarse</string>
+    <string name="fullname">Nombre completo</string>
+    <string name="email">Correo electrónico</string>
+    <string name="confirm_password">Confirmar contraseña</string>
+    <string name="back_to_login">Volver al inicio</string>
+
+    <!-- Main -->
+    <string name="welcome">Bienvenido a la pantalla principal</string>
+    <string name="go_to_tramite">Ir a Trámite</string>
+    <string name="go_to_reportes">Ir a Reportes</string>
+    <string name="logout">Cerrar sesión</string>
+
+    <!-- Reportes -->
+    <string name="reporte_titulo">Reporte de Trámites</string>
+    <string name="reporte_contenido">Aquí aparecerán los reportes generados por el usuario.</string>
+    <string name="volver_inicio">Volver al inicio</string>
+
+    <!-- Trámite -->
+    <string name="tramite_titulo">Formulario de Trámite</string>
+    <string name="enviar_tramite">Enviar trámite</string>
+    <string name="descripcion_tramite">Describe tu solicitud</string>
+    <string name="phone_hint">Teléfono de contacto</string>
+    <string name="fraccionamiento_hint">Fraccionamiento</string>
+    <string name="calle_hint">Calle</string>
+    <string name="tipo_reporte_hint">Tipo de reporte</string>
+    <string name="foto_titulo">Agregar / tomar foto</string>
+    <string name="titulo_dialogo_imagen">Agregar imagen</string>
+    <string name="opcion_foto">Tomar foto</string>
+    <string name="opcion_galeria">Seleccionar de galería</string>
+
+    <!-- Validaciones -->
+    <string name="campo_obligatorio">Campo obligatorio</string>
+    <string name="reporte_enviado">Reporte enviado ✅</string>
+    <string name="permiso_necesario">Permisos necesarios para continuar</string>
+</resources>

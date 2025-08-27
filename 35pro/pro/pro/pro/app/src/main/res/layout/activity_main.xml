@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bienvenido a la pantalla principal"
+        android:textSize="18sp"
+        android:layout_marginBottom="32dp" />
+
+    <Button
+        android:id="@+id/btnIrATramite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ir a Trámite" />
+    <!-- ✅ Botón nuevo para ir al Tablero
+    <Button
+        android:id="@+id/btnIrAMapa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ir a Mapa" />
+    ✅ Botón nuevo para ir al Tablero
+    <Button
+        android:id="@+id/btnIrATablero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ir al Tablero"
+        android:layout_marginTop="16dp" />
+-->
+    <Button
+        android:id="@+id/btnCerrarSesion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cerrar sesión"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

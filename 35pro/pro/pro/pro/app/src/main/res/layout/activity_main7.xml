@@ -1,0 +1,1874 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Contenedor principal vertical -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <!-- Categorías principales -->
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="4dp">
+
+                <!-- Alumbrado -->
+                <LinearLayout
+                    android:id="@+id/btnAlumbrado"
+                    style="@style/CategoryButtonStyle"
+                    android:backgroundTint="#FFC107">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="ALUMBRADO"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:contentDescription="Alumbrado"
+                        android:src="@drawable/encalumbrado" />
+                </LinearLayout>
+
+                <!-- Calles -->
+                <LinearLayout
+                    android:id="@+id/btnCalles"
+                    style="@style/CategoryButtonStyle"
+                    android:backgroundTint="#9E9E9E">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="CALLES"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:contentDescription="Calles"
+                        android:src="@drawable/calles_sn" />
+                </LinearLayout>
+
+                <!-- MIAA / Agua -->
+                <LinearLayout
+                    android:id="@+id/btnMIAA"
+                    style="@style/CategoryButtonStyle"
+                    android:backgroundTint="#03A9F4">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="MIAA"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:contentDescription="Agua MIAA"
+                        android:src="@drawable/aguaenc" />
+                </LinearLayout>
+
+                <!-- Apoyos -->
+                <LinearLayout
+                    android:id="@+id/btnApoyos"
+                    style="@style/CategoryButtonStyle"
+                    android:backgroundTint="#E91E63">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="APOYOS"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:contentDescription="Apoyos"
+                        android:src="@drawable/encapoyos" />
+                </LinearLayout>
+
+                <!-- Parques y Jardines -->
+                <LinearLayout
+                    android:id="@+id/btnParques"
+                    style="@style/CategoryButtonStyle"
+                    android:backgroundTint="#4CAF50">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="PARQUES Y JARDINES"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:contentDescription="Parques"
+                        android:src="@drawable/encparques_y_jardines" />
+                </LinearLayout>
+
+                <!-- Ciudad -->
+                <LinearLayout
+                    android:id="@+id/btnCiudad"
+                    style="@style/CategoryButtonStyle"
+                    android:backgroundTint="#FF8A65">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="CIUDAD"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:contentDescription="Ciudad"
+                        android:src="@drawable/encciudad" />
+                </LinearLayout>
+
+                <!-- Convivencia -->
+                <LinearLayout
+                    android:id="@+id/btnConvivencia"
+                    style="@style/CategoryButtonStyle"
+                    android:backgroundTint="#607D8B">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="CONVIVENCIA"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:contentDescription="Convivencia"
+                        android:src="@drawable/enccovivencia" />
+                </LinearLayout>
+
+                <!-- Vigilancia -->
+                <LinearLayout
+                    android:id="@+id/btnVigilancia"
+                    style="@style/CategoryButtonStyle"
+                    android:backgroundTint="#B71C1C">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="VIGILANCIA"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:contentDescription="Vigilancia"
+                        android:src="@drawable/encvigilancia" />
+                </LinearLayout>
+
+                <!-- Limpia -->
+                <LinearLayout
+                    android:id="@+id/btnLimpia"
+                    style="@style/CategoryButtonStyle"
+                    android:backgroundTint="#673AB7">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="LIMPIA"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:contentDescription="Limpia"
+                        android:src="@drawable/enclimpieza" />
+                </LinearLayout>
+
+                <!-- Otros -->
+                <LinearLayout
+                    android:id="@+id/btnOtros"
+                    style="@style/CategoryButtonStyle"
+                    android:backgroundTint="#FF9800">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="OTROS"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:contentDescription="Otros"
+                        android:src="@drawable/otros" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+        <!-- Subcategorías ALUMBRADO ocultas inicialmente -->
+        <HorizontalScrollView
+            android:id="@+id/scrollAlumbradoSubcategorias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/layoutAlumbradoSubcategorias"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="4dp">
+
+                <!-- LUMINARIAS -->
+                <LinearLayout
+                    android:id="@+id/btnLuminarias"
+                    style="@style/CategoryButtonStyle"
+                    android:backgroundTint="#FFC107">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="LUMINARIAS"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:src="@drawable/luminaria"
+                        android:contentDescription="Luminarias"/>
+                </LinearLayout>
+
+                <!-- ESPACIOS COMUNES -->
+                <LinearLayout
+                    android:id="@+id/btnEspaciosComunes"
+                    style="@style/CategoryButtonStyle"
+                    android:backgroundTint="#FFC107">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="ESPACIOS COMUNES"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:src="@drawable/espacioscomunes"
+                        android:contentDescription="Espacios Comunes"/>
+                </LinearLayout>
+
+                <!-- MEJORAS -->
+                <LinearLayout
+                    android:id="@+id/btnMejoras"
+                    style="@style/CategoryButtonStyle"
+                    android:backgroundTint="#FFC107">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="MEJORAS"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:src="@drawable/mejoras"
+                        android:contentDescription="Mejoras"/>
+                </LinearLayout>
+
+                <!-- APAGON -->
+                <LinearLayout
+                    android:id="@+id/btnApagon"
+                    style="@style/CategoryButtonStyle"
+                    android:backgroundTint="#FFC107">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="APAGON"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:src="@drawable/apagon"
+                        android:contentDescription="Apagón"/>
+                </LinearLayout>
+
+                <!-- ARBOTANTES -->
+                <LinearLayout
+                    android:id="@+id/btnArbotantes"
+                    style="@style/CategoryButtonStyle"
+                    android:backgroundTint="#FFC107">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="ARBOTANTES"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:src="@drawable/arbotantes"
+                        android:contentDescription="Arbotantes"/>
+                </LinearLayout>
+
+                <!-- POSTES -->
+                <LinearLayout
+                    android:id="@+id/btnPostes"
+                    style="@style/CategoryButtonStyle"
+                    android:backgroundTint="#FFC107">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="POSTES"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:src="@drawable/postes"
+                        android:contentDescription="Postes"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+
+        <!-- Subcategorías CALLES ocultas inicialmente -->
+        <HorizontalScrollView
+            android:id="@+id/scrollCallesSubcategorias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/layoutCallesSubcategorias"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="4dp">
+
+                <!-- BACHES -->
+                <LinearLayout
+                    android:id="@+id/btnBaches"
+                    style="@style/CategoryButtonStyle"
+                    android:backgroundTint="#9E9E9E">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="BACHES"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:src="@drawable/baches"
+                        android:contentDescription="Baches"/>
+                </LinearLayout>
+
+                <!-- BANQUETAS -->
+                <LinearLayout
+                    android:id="@+id/btnBanquetas"
+                    style="@style/CategoryButtonStyle"
+                    android:backgroundTint="#9E9E9E">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="BANQUETAS"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:src="@drawable/banquetas"
+                        android:contentDescription="Banquetas"/>
+                </LinearLayout>
+
+                <!-- TOPES -->
+                <LinearLayout
+                    android:id="@+id/btnTopes"
+                    style="@style/CategoryButtonStyle"
+                    android:backgroundTint="#9E9E9E">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="TOPES"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:src="@drawable/topes"
+                        android:contentDescription="Topes"/>
+                </LinearLayout>
+
+                <!-- RAMPAS -->
+                <LinearLayout
+                    android:id="@+id/btnRampas"
+                    style="@style/CategoryButtonStyle"
+                    android:backgroundTint="#9E9E9E">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="RAMPAS"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:src="@drawable/rampas"
+                        android:contentDescription="Rampas"/>
+                </LinearLayout>
+
+                <!-- MANTENIMIENTO DE SEÑALAMIENTOS -->
+                <LinearLayout
+                    android:id="@+id/btnMantenimientoSenalamientos"
+                    style="@style/CategoryButtonStyle"
+                    android:backgroundTint="#9E9E9E">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="MANTENIMIENTO DE SEÑALAMIENTOS"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:src="@drawable/mantenimientodecalles"
+                        android:contentDescription="Mantenimiento de Señalamientos"/>
+                </LinearLayout>
+
+                <!-- MANTENIMIENTO -->
+                <LinearLayout
+                    android:id="@+id/btnMantenimiento"
+                    style="@style/CategoryButtonStyle"
+                    android:backgroundTint="#9E9E9E">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="MANTENIMIENTO"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:src="@drawable/mantenimientodese_alamientos"
+                        android:contentDescription="Mantenimiento"/>
+                </LinearLayout>
+
+                <!-- LIMPIEZA -->
+                <LinearLayout
+                    android:id="@+id/btnLimpiezaCalles"
+                    style="@style/CategoryButtonStyle"
+                    android:backgroundTint="#9E9E9E">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="LIMPIEZA"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:src="@drawable/limpieza"
+                        android:contentDescription="Limpieza"/>
+                </LinearLayout>
+
+                <!-- ESCOMBRO -->
+                <LinearLayout
+                    android:id="@+id/btnEscombro"
+                    style="@style/CategoryButtonStyle"
+                    android:backgroundTint="#9E9E9E">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="ESCOMBRO"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:src="@drawable/escombros"
+                        android:contentDescription="Escombro"/>
+                </LinearLayout>
+
+                <!-- REHABILITACION DE FACHADAS -->
+                <LinearLayout
+                    android:id="@+id/btnRehabilitacionFachadas"
+                    style="@style/CategoryButtonStyle"
+                    android:backgroundTint="#9E9E9E">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="REHABILITACION DE FACHADAS"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:src="@drawable/rehabilitaciondefachadas"
+                        android:contentDescription="Rehabilitación de Fachadas"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+        <!-- Subcategorías MIAA ocultas inicialmente -->
+        <HorizontalScrollView
+            android:id="@+id/scrollMIAASubcategorias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/layoutMIAASubcategorias"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="4dp">
+
+                <!-- DRENAJE -->
+                <LinearLayout
+                    android:id="@+id/btnDrenaje"
+                    style="@style/CategoryButtonStyle"
+                    android:backgroundTint="#03A9F4">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="DRENAJE"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:src="@drawable/drenage"
+                        android:contentDescription="Drenaje"/>
+                </LinearLayout>
+
+                <!-- FUGAS DE AGUA -->
+                <LinearLayout
+                    android:id="@+id/btnFugasAgua"
+                    style="@style/CategoryButtonStyle"
+                    android:backgroundTint="#03A9F4">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="FUGAS DE AGUA"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:src="@drawable/fugadeagua"
+                        android:contentDescription="Fugas de Agua"/>
+                </LinearLayout>
+
+                <!-- OBRA INCONCLUSA -->
+                <LinearLayout
+                    android:id="@+id/btnObraInconclusa"
+                    style="@style/CategoryButtonStyle"
+                    android:backgroundTint="#03A9F4">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="OBRA INCONCLUSA"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:src="@drawable/obrasinconclusas"
+                        android:contentDescription="Obra Inconclusa"/>
+                </LinearLayout>
+
+                <!-- FALTA DE AGUA -->
+                <LinearLayout
+                    android:id="@+id/btnFaltaAgua"
+                    style="@style/CategoryButtonStyle"
+                    android:backgroundTint="#03A9F4">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="FALTA DE AGUA"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:src="@drawable/faltadeagua"
+                        android:contentDescription="Falta de Agua"/>
+                </LinearLayout>
+
+                <!-- ALCANTARILLAS -->
+                <LinearLayout
+                    android:id="@+id/btnAlcantarillas"
+                    style="@style/CategoryButtonStyle"
+                    android:backgroundTint="#03A9F4">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="ALCANTARILLAS"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:src="@drawable/alcantarillas"
+                        android:contentDescription="Alcantarillas"/>
+                </LinearLayout>
+
+                <!-- INSTALACION -->
+                <LinearLayout
+                    android:id="@+id/btnInstalacion"
+                    style="@style/CategoryButtonStyle"
+                    android:backgroundTint="#03A9F4">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="INSTALACION"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:src="@drawable/instalacion"
+                        android:contentDescription="Instalación"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <!-- Subcategorías APOYOS ocultas inicialmente -->
+        <HorizontalScrollView
+            android:id="@+id/scrollApoyosSubcategorias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/layoutApoyosSubcategorias"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="4dp">
+
+                <!-- ORTOPEDICOS -->
+                <LinearLayout
+                    android:id="@+id/btnOrtopedicos"
+                    style="@style/CategoryButtonStyle"
+                    android:backgroundTint="#E91E63">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="ORTOPÉDICOS"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:src="@drawable/ortopedicos"
+                        android:contentDescription="Ortopédicos"/>
+                </LinearLayout>
+
+                <!-- PAÑALES -->
+                <LinearLayout
+                    android:id="@+id/btnPañales"
+                    style="@style/CategoryButtonStyle"
+                    android:backgroundTint="#E91E63">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="PAÑALES"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:src="@drawable/pa_ales"
+                        android:contentDescription="Pañales"/>
+                </LinearLayout>
+
+                <!-- ALIMENTOS -->
+                <LinearLayout
+                    android:id="@+id/btnAlimentos"
+                    style="@style/CategoryButtonStyle"
+                    android:backgroundTint="#E91E63">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="ALIMENTOS"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:src="@drawable/alimentos"
+                        android:contentDescription="Alimentos"/>
+                </LinearLayout>
+
+                <!-- ASESORIA -->
+                <LinearLayout
+                    android:id="@+id/btnAsesoria"
+                    style="@style/CategoryButtonStyle"
+                    android:backgroundTint="#E91E63">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="ASESORÍA"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:src="@drawable/asesoria"
+                        android:contentDescription="Asesoría"/>
+                </LinearLayout>
+
+                <!-- SERVICIOS MEDICOS -->
+                <LinearLayout
+                    android:id="@+id/btnServiciosMedicos"
+                    style="@style/CategoryButtonStyle"
+                    android:backgroundTint="#E91E63">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="SERVICIOS MÉDICOS"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:src="@drawable/serviciosmedicos"
+                        android:contentDescription="Servicios Médicos"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <!-- Subcategorías PARQUES Y JARDINES ocultas inicialmente -->
+        <HorizontalScrollView
+            android:id="@+id/scrollParquesSubcategorias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/layoutParquesSubcategorias"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="4dp">
+
+                <!-- ARBOL DE TU CASA -->
+                <LinearLayout
+                    android:id="@+id/btnArbolDeTuCasa"
+                    style="@style/CategoryButtonStyle"
+                    android:backgroundTint="#4CAF50">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="ÁRBOL DE TU CASA"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:src="@drawable/arboldetucasa"
+                        android:contentDescription="Árbol de tu casa"/>
+                </LinearLayout>
+
+                <!-- PODA -->
+                <LinearLayout
+                    android:id="@+id/btnPoda"
+                    style="@style/CategoryButtonStyle"
+                    android:backgroundTint="#4CAF50">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="PODA"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:src="@drawable/poda"
+                        android:contentDescription="Poda"/>
+                </LinearLayout>
+
+                <!-- AREAS VERDES -->
+                <LinearLayout
+                    android:id="@+id/btnAreasVerdes"
+                    style="@style/CategoryButtonStyle"
+                    android:backgroundTint="#4CAF50">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="ÁREAS VERDES"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:src="@drawable/areasverdes"
+                        android:contentDescription="Áreas verdes"/>
+                </LinearLayout>
+
+                <!-- REHABILITACION -->
+                <LinearLayout
+                    android:id="@+id/btnRehabilitacion"
+                    style="@style/CategoryButtonStyle"
+                    android:backgroundTint="#4CAF50">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="REHABILITACIÓN"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:src="@drawable/rehabilitacion"
+                        android:contentDescription="Rehabilitación"/>
+                </LinearLayout>
+
+                <!-- DESMALEZADO -->
+                <LinearLayout
+                    android:id="@+id/btnDesmalezado"
+                    style="@style/CategoryButtonStyle"
+                    android:backgroundTint="#4CAF50">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="DESMALEZADO"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:src="@drawable/desmalezado"
+                        android:contentDescription="Desmalezado"/>
+                </LinearLayout>
+
+                <!-- EQUIPAMIENTO -->
+                <LinearLayout
+                    android:id="@+id/btnEquipamiento"
+                    style="@style/CategoryButtonStyle"
+                    android:backgroundTint="#4CAF50">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="EQUIPAMIENTO"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:src="@drawable/equipamiento"
+                        android:contentDescription="Equipamiento"/>
+                </LinearLayout>
+
+                <!-- CAMELLONES -->
+                <LinearLayout
+                    android:id="@+id/btnCamellones"
+                    style="@style/CategoryButtonStyle"
+                    android:backgroundTint="#4CAF50">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="CAMELLONES"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:src="@drawable/camellones"
+                        android:contentDescription="Camellones"/>
+                </LinearLayout>
+
+                <!-- RECOLECCION -->
+                <LinearLayout
+                    android:id="@+id/btnRecoleccion"
+                    style="@style/CategoryButtonStyle"
+                    android:backgroundTint="#4CAF50">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="RECOLECCIÓN"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:src="@drawable/recoleccion"
+                        android:contentDescription="Recolección"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+        <!-- Subcategorías LIMPIA ocultas inicialmente -->
+        <HorizontalScrollView
+            android:id="@+id/scrollLimpiaSubcategorias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/layoutLimpiaSubcategorias"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="4dp">
+
+                <!-- MUEBLES -->
+                <LinearLayout
+                    android:id="@+id/btnMuebles"
+                    style="@style/CategoryButtonStyle"
+                    android:backgroundTint="#673AB7">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="MUEBLES"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:src="@drawable/muebles"
+                        android:contentDescription="Muebles"/>
+                </LinearLayout>
+
+                <!-- CONTENEDORES -->
+                <LinearLayout
+                    android:id="@+id/btnContenedores"
+                    style="@style/CategoryButtonStyle"
+                    android:backgroundTint="#673AB7">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="CONTENEDORES"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:src="@drawable/contenedor"
+                        android:contentDescription="Contenedores"/>
+                </LinearLayout>
+
+                <!-- BASURA -->
+                <LinearLayout
+                    android:id="@+id/btnBasura"
+                    style="@style/CategoryButtonStyle"
+                    android:backgroundTint="#673AB7">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="BASURA"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:src="@drawable/basura"
+                        android:contentDescription="Basura"/>
+                </LinearLayout>
+
+                <!-- RECOLECCIÓN DE RESIDUOS -->
+                <LinearLayout
+                    android:id="@+id/btnRecoleccionResiduos"
+                    style="@style/CategoryButtonStyle"
+                    android:backgroundTint="#673AB7">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="RECOLECCIÓN DE RESIDUOS"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:src="@drawable/recoleccion"
+                        android:contentDescription="Recolección de residuos"/>
+                </LinearLayout>
+
+                <!-- LIMPIEZA DE ESPACIOS -->
+                <LinearLayout
+                    android:id="@+id/btnLimpiezaEspacios"
+                    style="@style/CategoryButtonStyle"
+                    android:backgroundTint="#673AB7">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="LIMPIEZA DE ESPACIOS"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:src="@drawable/limpiezaareas"
+                        android:contentDescription="Limpieza de espacios"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+        <!-- Subcategorías VIGILANCIA ocultas inicialmente -->
+        <HorizontalScrollView
+            android:id="@+id/scrollVigilanciaSubcategorias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/layoutVigilanciaSubcategorias"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="4dp">
+
+                <!-- VIGILANCIA -->
+                <LinearLayout
+                    android:id="@+id/btnVigilanciaGeneral"
+                    style="@style/CategoryButtonStyle"
+                    android:backgroundTint="#B71C1C">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="VIGILANCIA"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:src="@drawable/vigilancia"
+                        android:contentDescription="Vigilancia"/>
+                </LinearLayout>
+
+                <!-- VEHÍCULOS ABANDONADOS -->
+                <LinearLayout
+                    android:id="@+id/btnVehiculosAbandonados"
+                    style="@style/CategoryButtonStyle"
+                    android:backgroundTint="#B71C1C">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="VEHÍCULOS ABANDONADOS"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:src="@drawable/vehiculosabandonados"
+                        android:contentDescription="Vehículos abandonados"/>
+                </LinearLayout>
+
+                <!-- APOYO VIAL -->
+                <LinearLayout
+                    android:id="@+id/btnApoyoVial"
+                    style="@style/CategoryButtonStyle"
+                    android:backgroundTint="#B71C1C">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="APOYO VIAL"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:src="@drawable/apoyovial"
+                        android:contentDescription="Apoyo vial"/>
+                </LinearLayout>
+
+                <!-- MEJORAS VIALES -->
+                <LinearLayout
+                    android:id="@+id/btnMejorasViales"
+                    style="@style/CategoryButtonStyle"
+                    android:backgroundTint="#B71C1C">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="MEJORAS VIALES"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:src="@drawable/mejorasviales"
+                        android:contentDescription="Mejoras viales"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+        <!-- Subcategorías CONVIVENCIA ocultas inicialmente -->
+        <HorizontalScrollView
+            android:id="@+id/scrollConvivenciaSubcategorias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/layoutConvivenciaSubcategorias"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="4dp">
+
+                <!-- RUIDO -->
+                <LinearLayout
+                    android:id="@+id/btnRuido"
+                    style="@style/CategoryButtonStyle"
+                    android:backgroundTint="#607D8B">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="RUIDO"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:src="@drawable/ruido"
+                        android:contentDescription="Ruido"/>
+                </LinearLayout>
+
+                <!-- MERCADOS -->
+                <LinearLayout
+                    android:id="@+id/btnMercados"
+                    style="@style/CategoryButtonStyle"
+                    android:backgroundTint="#607D8B">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="MERCADOS"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:src="@drawable/mercados"
+                        android:contentDescription="Mercados"/>
+                </LinearLayout>
+
+                <!-- PERMISOS -->
+                <LinearLayout
+                    android:id="@+id/btnPermisos"
+                    style="@style/CategoryButtonStyle"
+                    android:backgroundTint="#607D8B">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="PERMISOS"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:src="@drawable/permisos"
+                        android:contentDescription="Permisos"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <!-- Subcategorías CIUDAD ocultas inicialmente -->
+        <HorizontalScrollView
+            android:id="@+id/scrollCiudadSubcategorias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/layoutCiudadSubcategorias"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="4dp">
+
+                <!-- PROBLEMAS VECINALES -->
+                <LinearLayout
+                    android:id="@+id/btnProblemasVecinales"
+                    style="@style/CategoryButtonStyle"
+                    android:backgroundTint="#FF8A65">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="PROBLEMAS VECINALES"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:src="@drawable/problemasvecinales"
+                        android:contentDescription="Problemas Vecinales"/>
+                </LinearLayout>
+
+                <!-- OBRA -->
+                <LinearLayout
+                    android:id="@+id/btnObra"
+                    style="@style/CategoryButtonStyle"
+                    android:backgroundTint="#FF8A65">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="OBRA"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:src="@drawable/obras"
+                        android:contentDescription="Obra"/>
+                </LinearLayout>
+
+                <!-- USO DE SUELO -->
+                <LinearLayout
+                    android:id="@+id/btnUsoDeSuelo"
+                    style="@style/CategoryButtonStyle"
+                    android:backgroundTint="#FF8A65">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="USO DE SUELO"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:src="@drawable/usodesuelo"
+                        android:contentDescription="Uso de Suelo"/>
+                </LinearLayout>
+
+                <!-- ACLARACION -->
+                <LinearLayout
+                    android:id="@+id/btnAclaracion"
+                    style="@style/CategoryButtonStyle"
+                    android:backgroundTint="#FF8A65">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="ACLARACION"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:src="@drawable/aclaracion"
+                        android:contentDescription="Aclaración"/>
+                </LinearLayout>
+
+                <!-- ESCOMBRO VIA PUBLICA -->
+                <LinearLayout
+                    android:id="@+id/btnEscombroViaPublica"
+                    style="@style/CategoryButtonStyle"
+                    android:backgroundTint="#FF8A65">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="ESCOMBRO VIA PUBLICA"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:src="@drawable/escombroviapublica"
+                        android:contentDescription="Escombro Vía Pública"/>
+                </LinearLayout>
+
+                <!-- FRACCIONAMIENTO -->
+                <LinearLayout
+                    android:id="@+id/btnFraccionamiento"
+                    style="@style/CategoryButtonStyle"
+                    android:backgroundTint="#FF8A65">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="FRACCIONAMIENTO"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:src="@drawable/fraccionamiento"
+                        android:contentDescription="Fraccionamiento"/>
+                </LinearLayout>
+
+                <!-- FINCAS EN RIESGO -->
+                <LinearLayout
+                    android:id="@+id/btnFincasEnRiesgo"
+                    style="@style/CategoryButtonStyle"
+                    android:backgroundTint="#FF8A65">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="FINCAS EN RIESGO"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:src="@drawable/fincasenriesgo"
+                        android:contentDescription="Fincas en Riesgo"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+
+        <View android:layout_width="match_parent" android:layout_height="16dp"/>
+
+        <!-- Barra de dirección -->
+        <LinearLayout
+            android:id="@+id/directionBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:elevation="4dp"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/tvDireccionTitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dirección seleccionada:"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvDireccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="(Aún no seleccionada)"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="14sp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:paddingTop="4dp"/>
+        </LinearLayout>
+
+        <!-- Botón mostrar mapa -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/btnMostrarMapa"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="12dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rounded_button"
+                android:src="@drawable/ic_arrow_down"
+                android:contentDescription="Mostrar mapa"
+                android:elevation="20dp"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+        <!-- Autocomplete -->
+        <FrameLayout
+            android:id="@+id/autocompleteFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_edittext"
+            android:padding="4dp">
+            <fragment
+                android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"/>
+        </FrameLayout>
+
+        <View android:layout_width="match_parent" android:layout_height="16dp"/>
+
+        <!-- Fragmento de Google Maps -->
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <!-- 🔹 Pantalla 2 integrada y oculta -->
+        <LinearLayout
+            android:id="@+id/layoutPantalla2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:background="#FFFFFF">
+
+            <!-- Contenido desplazable del formulario -->
+            <ScrollView
+                android:id="@+id/main"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="24dp"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- Campos de entrada -->
+                    <EditText
+                        android:id="@+id/etNombre"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Nombre completo"
+                        android:inputType="textPersonName"
+                        android:layout_marginBottom="16dp" />
+
+                    <EditText
+                        android:id="@+id/etTelefono"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Teléfono"
+                        android:inputType="phone"
+                        android:layout_marginBottom="16dp" />
+
+                    <EditText
+                        android:id="@+id/etFraccionamiento"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Fraccionamiento"
+                        android:inputType="text"
+                        android:layout_marginBottom="16dp" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/actvReportType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Tipo de reporte"
+                        android:inputType="text"
+                        android:layout_marginBottom="16dp" />
+
+                    <EditText
+                        android:id="@+id/etDescripcion"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:hint="Descripción del problema"
+                        android:inputType="textMultiLine"
+                        android:gravity="top"
+                        android:layout_marginBottom="16dp" />
+
+                    <!-- Multimedia selector -->
+                    <LinearLayout
+                        android:id="@+id/layoutFoto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:background="?attr/selectableItemBackground"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:id="@+id/ivThumbnail"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:src="@android:drawable/ic_menu_camera"
+                            android:tint="#1E88E5" />
+
+                        <TextView
+                            android:id="@+id/tvAddMedia"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Agregar / tomar foto, video, audio o PDF"
+                            android:textStyle="bold"
+                            android:textColor="#1E88E5"
+                            android:layout_marginStart="16dp"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <!-- Fotos y videos añadidos -->
+                    <TextView
+                        android:id="@+id/tvGalleryLabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Fotos y videos añadidos"
+                        android:textStyle="bold"
+                        android:textColor="#1E88E5"
+                        android:layout_marginTop="16dp"
+                        android:textSize="16sp"
+                        android:visibility="gone" />
+
+                    <HorizontalScrollView
+                        android:id="@+id/horizontalScrollView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:visibility="gone"
+                        android:scrollbars="none">
+
+                        <LinearLayout
+                            android:id="@+id/imageContainer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="4dp" />
+                    </HorizontalScrollView>
+
+                    <!-- Audios añadidos -->
+                    <TextView
+                        android:id="@+id/tvAudioLabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Audios añadidos"
+                        android:textStyle="bold"
+                        android:textColor="#1E88E5"
+                        android:layout_marginTop="16dp"
+                        android:textSize="16sp"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/audioContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="8dp"
+                        android:visibility="gone" />
+
+                    <!-- PDFs añadidos -->
+                    <TextView
+                        android:id="@+id/tvPdfLabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Archivos PDF añadidos"
+                        android:textStyle="bold"
+                        android:textColor="#1E88E5"
+                        android:layout_marginTop="16dp"
+                        android:textSize="16sp"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/pdfContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="8dp"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </ScrollView>
+
+            <!-- Botón fijo inferior -->
+            <LinearLayout
+                android:id="@+id/layoutBotones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="16dp"
+                android:background="#FFFFFF"
+                android:elevation="6dp">
+
+                <Button
+                    android:id="@+id/btnSubmit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Enviar reporte"
+                    android:backgroundTint="#1E88E5"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <!-- 🔴 MODAL flotante de grabación -->
+            <FrameLayout
+                android:id="@+id/layoutGrabandoAudio"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#88000000"
+                android:visibility="gone"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/bg_modal"
+                    android:padding="24dp"
+                    android:elevation="8dp"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/tvRecordingTimer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="00:00"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="16dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <Button
+                            android:id="@+id/btnStartRecording"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Grabar"
+                            android:backgroundTint="#4CAF50"
+                            android:textColor="#FFFFFF"
+                            android:layout_marginEnd="16dp" />
+
+                        <Button
+                            android:id="@+id/btnCancelarGrabacion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cancelar"
+                            android:backgroundTint="#F44336"
+                            android:textColor="#FFFFFF" />
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Botón enviar -->
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="ENVIAR"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#2196F3"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="12dp"
+        android:background="@drawable/rounded_button"/>
+
+    <!-- Botón ubicación flotante -->
+    <ImageButton
+        android:id="@+id/btnUbicacion"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@id/btnEnviar"
+        android:layout_margin="16dp"
+        android:background="@drawable/rounded_button"
+        android:src="@drawable/ic_location"
+        android:tint="@android:color/white"
+        android:contentDescription="Mi ubicación"/>
+</RelativeLayout>

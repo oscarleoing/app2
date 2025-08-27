@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/modalBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#99000000"
+    android:visibility="gone">
+
+    <!-- Contenedor del modal -->
+<LinearLayout
+android:id="@+id/modalContent"
+android:layout_width="320dp"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+android:layout_gravity="center"
+android:padding="24dp"
+android:background="@drawable/bg_modal"
+android:elevation="16dp"
+android:gravity="center_horizontal">
+
+<TextView
+    android:id="@+id/tvRecordingTimer"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="00:00"
+    android:textSize="28sp"
+    android:textStyle="bold"
+    android:textColor="#212121"
+    android:layout_marginBottom="20dp" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_marginTop="12dp"
+    android:weightSum="2">
+
+    <Button
+        android:id="@+id/btnStartRecording"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_weight="1"
+        android:text="Grabar"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:backgroundTint="#4CAF50"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/btn_rounded" />
+
+    <Button
+        android:id="@+id/btnCancelarGrabacion"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_weight="1"
+        android:text="Cancelar"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:backgroundTint="#F44336"
+        android:background="@drawable/btn_rounded" />
+</LinearLayout>
+</LinearLayout>
+
+    </FrameLayout>

@@ -1,0 +1,704 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <!-- Alumbrado -->
+            <LinearLayout
+                android:id="@+id/btnAlumbrado"
+                style="@style/TableroButtonContainer"
+                android:backgroundTint="#FFC107"
+                android:layout_width="160dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="8dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:padding="8dp">
+
+                <ImageView
+                    style="@style/TableroButtonIcon"
+                    android:src="@drawable/encalumbrado"
+                    android:contentDescription="Alumbrado" />
+
+                <TextView
+                    style="@style/TableroButtonText"
+                    android:text="ALUMBRADO" />
+            </LinearLayout>
+
+            <!-- Calles -->
+            <LinearLayout
+                android:id="@+id/btnCalles"
+                style="@style/TableroButtonContainer"
+                android:backgroundTint="#9E9E9E"
+                android:layout_width="160dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="8dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:padding="8dp">
+
+                <ImageView
+                    style="@style/TableroButtonIcon"
+                    android:src="@drawable/calles_sn"
+                    android:contentDescription="Calles" />
+
+                <TextView
+                    style="@style/TableroButtonText"
+                    android:text="CALLES" />
+            </LinearLayout>
+
+            <!-- MIAA / Agua -->
+            <LinearLayout
+                android:id="@+id/btnMIAA"
+                style="@style/TableroButtonContainer"
+                android:backgroundTint="#03A9F4"
+                android:layout_width="160dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="8dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:padding="8dp">
+
+                <ImageView
+                    style="@style/TableroButtonIcon"
+                    android:src="@drawable/aguaenc"
+                    android:contentDescription="Agua MIAA" />
+
+                <TextView
+                    style="@style/TableroButtonText"
+                    android:text="MIAA" />
+            </LinearLayout>
+
+            <!-- Apoyos -->
+            <LinearLayout
+                android:id="@+id/btnApoyos"
+                style="@style/TableroButtonContainer"
+                android:backgroundTint="#E91E63"
+                android:layout_width="160dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="8dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:padding="8dp">
+
+                <ImageView
+                    style="@style/TableroButtonIcon"
+                    android:src="@drawable/encapoyos"
+                    android:contentDescription="Apoyos" />
+
+                <TextView
+                    style="@style/TableroButtonText"
+                    android:text="APOYOS" />
+            </LinearLayout>
+
+            <!-- Parques y Jardines -->
+            <LinearLayout
+                android:id="@+id/btnParques"
+                style="@style/TableroButtonContainer"
+                android:backgroundTint="#4CAF50"
+                android:layout_width="160dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="8dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:padding="8dp">
+
+                <ImageView
+                    style="@style/TableroButtonIcon"
+                    android:src="@drawable/encparques_y_jardines"
+                    android:contentDescription="Parques" />
+
+                <TextView
+                    style="@style/TableroButtonText"
+                    android:text="PARQUES Y JARDINES" />
+            </LinearLayout>
+
+            <!-- Ciudad -->
+            <LinearLayout
+                android:id="@+id/btnCiudad"
+                style="@style/TableroButtonContainer"
+                android:backgroundTint="#FF8A65"
+                android:layout_width="160dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="8dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:padding="8dp">
+
+                <ImageView
+                    style="@style/TableroButtonIcon"
+                    android:src="@drawable/encciudad"
+                    android:contentDescription="Ciudad" />
+
+                <TextView
+                    style="@style/TableroButtonText"
+                    android:text="CIUDAD" />
+            </LinearLayout>
+
+            <!-- Convivencia -->
+            <LinearLayout
+                android:id="@+id/btnConvivencia"
+                style="@style/TableroButtonContainer"
+                android:backgroundTint="#607D8B"
+                android:layout_width="160dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="8dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:padding="8dp">
+
+                <ImageView
+                    style="@style/TableroButtonIcon"
+                    android:src="@drawable/enccovivencia"
+                    android:contentDescription="Convivencia" />
+
+                <TextView
+                    style="@style/TableroButtonText"
+                    android:text="CONVIVENCIA" />
+            </LinearLayout>
+
+            <!-- Vigilancia -->
+            <LinearLayout
+                android:id="@+id/btnVigilancia"
+                style="@style/TableroButtonContainer"
+                android:backgroundTint="#B71C1C"
+                android:layout_width="160dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="8dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:padding="8dp">
+
+                <ImageView
+                    style="@style/TableroButtonIcon"
+                    android:src="@drawable/encvigilancia"
+                    android:contentDescription="Vigilancia" />
+
+                <TextView
+                    style="@style/TableroButtonText"
+                    android:text="VIGILANCIA" />
+            </LinearLayout>
+
+            <!-- Limpia -->
+            <LinearLayout
+                android:id="@+id/btnLimpia"
+                style="@style/TableroButtonContainer"
+                android:backgroundTint="#673AB7"
+                android:layout_width="160dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="8dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:padding="8dp">
+
+                <ImageView
+                    style="@style/TableroButtonIcon"
+                    android:src="@drawable/enclimpieza"
+                    android:contentDescription="Limpia" />
+
+                <TextView
+                    style="@style/TableroButtonText"
+                    android:text="LIMPIA" />
+            </LinearLayout>
+
+            <!-- Otros -->
+            <LinearLayout
+                android:id="@+id/btnOtros"
+                style="@style/TableroButtonContainer"
+                android:backgroundTint="#FF9800"
+                android:layout_width="160dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="8dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:padding="8dp">
+
+                <ImageView
+                    style="@style/TableroButtonIcon"
+                    android:src="@drawable/otros"
+                    android:contentDescription="Otros" />
+
+                <TextView
+                    style="@style/TableroButtonText"
+                    android:text="OTROS" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- Scroll horizontal de subcategorías -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:visibility="gone"
+        android:id="@+id/scrollClasificatoria">
+
+        <LinearLayout
+            android:id="@+id/layoutClasificatoria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <!-- Luminaria -->
+            <LinearLayout
+                android:id="@+id/btnLuminarias"
+                android:layout_width="140dp"
+                android:layout_height="120dp"
+                android:layout_marginEnd="8dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:backgroundTint="#FFC107"
+                android:padding="8dp"
+                android:background="@drawable/border_bottom_yellow">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/luminaria"
+                    android:contentDescription="Luminaria" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LUMINARIA"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="4dp" />
+            </LinearLayout>
+
+            <!-- Espacios Comunes -->
+            <LinearLayout
+                android:id="@+id/btnEspaciosComunes"
+                android:layout_width="140dp"
+                android:layout_height="120dp"
+                android:layout_marginEnd="8dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:backgroundTint="#FFC107"
+                android:padding="8dp"
+                android:background="@drawable/border_bottom_yellow">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/espacioscomunes"
+                    android:contentDescription="Espacios Comunes" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ESPACIOS COMUNES"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="4dp" />
+            </LinearLayout>
+
+            <!-- Mejoras -->
+            <LinearLayout
+                android:id="@+id/btnMejoras"
+                android:layout_width="140dp"
+                android:layout_height="120dp"
+                android:layout_marginEnd="8dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:backgroundTint="#FFC107"
+                android:padding="8dp"
+                android:background="@drawable/border_bottom_yellow">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/mejoras"
+                    android:contentDescription="Mejoras" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MEJORAS"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="4dp" />
+            </LinearLayout>
+
+            <!-- Apagón -->
+            <LinearLayout
+                android:id="@+id/btnApagon"
+                android:layout_width="140dp"
+                android:layout_height="120dp"
+                android:layout_marginEnd="8dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:backgroundTint="#FFC107"
+                android:padding="8dp"
+                android:background="@drawable/border_bottom_yellow">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/apagon"
+                    android:contentDescription="Apagón" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="APAGÓN"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="4dp" />
+            </LinearLayout>
+
+            <!-- Arbotantes -->
+            <LinearLayout
+                android:id="@+id/btnArbotantes"
+                android:layout_width="140dp"
+                android:layout_height="120dp"
+                android:layout_marginEnd="8dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:backgroundTint="#FFC107"
+                android:padding="8dp"
+                android:background="@drawable/border_bottom_yellow">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/arbotantes"
+                    android:contentDescription="Arbotantes" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ARBOTANTES"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="4dp" />
+            </LinearLayout>
+
+            <!-- Postes -->
+            <LinearLayout
+                android:id="@+id/btnPostes"
+                android:layout_width="140dp"
+                android:layout_height="120dp"
+                android:layout_marginEnd="8dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:backgroundTint="#FFC107"
+                android:padding="8dp"
+                android:background="@drawable/border_bottom_yellow">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/postes"
+                    android:backgroundTint="#FFFFFF"
+                    android:contentDescription="Postes" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="POSTES"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="4dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- 🔹 Contenido desplazable del formulario -->
+    <ScrollView
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:clipToPadding="false"
+        android:padding="24dp">
+
+        <!-- LinearLayout padre con id formulario -->
+        <LinearLayout
+            android:id="@+id/formulario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Campos de entrada -->
+            <EditText
+                android:id="@+id/etNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre completo"
+                android:inputType="textPersonName"
+                android:layout_marginBottom="16dp" />
+
+            <EditText
+                android:id="@+id/etTelefono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Teléfono"
+                android:inputType="phone"
+                android:layout_marginBottom="16dp" />
+
+            <EditText
+                android:id="@+id/etFraccionamiento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Fraccionamiento"
+                android:inputType="text"
+                android:layout_marginBottom="16dp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/actvReportType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tipo de reporte"
+                android:inputType="text"
+                android:layout_marginBottom="16dp" />
+
+            <EditText
+                android:id="@+id/etDescripcion"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:hint="Descripción del problema"
+                android:inputType="textMultiLine"
+                android:gravity="top"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Multimedia selector -->
+            <LinearLayout
+                android:id="@+id/layoutFoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackground"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/ivThumbnail"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@android:drawable/ic_menu_camera"
+                    android:tint="#1E88E5" />
+
+                <TextView
+                    android:id="@+id/tvAddMedia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Agregar / tomar foto, video, audio o PDF"
+                    android:textStyle="bold"
+                    android:textColor="#1E88E5"
+                    android:layout_marginStart="16dp"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <!-- Contenedores multimedia -->
+            <!-- Fotos -->
+            <TextView
+                android:id="@+id/tvGalleryLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fotos y videos añadidos"
+                android:textStyle="bold"
+                android:textColor="#1E88E5"
+                android:layout_marginTop="16dp"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:scrollbars="none"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/imageContainer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="4dp" />
+            </HorizontalScrollView>
+
+            <!-- Audios -->
+            <TextView
+                android:id="@+id/tvAudioLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Audios añadidos"
+                android:textStyle="bold"
+                android:textColor="#1E88E5"
+                android:layout_marginTop="16dp"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/audioContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="8dp"
+                android:visibility="gone" />
+
+            <!-- PDFs -->
+            <TextView
+                android:id="@+id/tvPdfLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Archivos PDF añadidos"
+                android:textStyle="bold"
+                android:textColor="#1E88E5"
+                android:layout_marginTop="16dp"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/pdfContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="8dp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- 🔹 Botón enviar -->
+    <LinearLayout
+        android:id="@+id/layoutBotones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="#FFFFFF"
+        android:elevation="6dp">
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enviar reporte"
+            android:backgroundTint="#1E88E5"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <!-- 🔴 Modal grabación de audio -->
+    <FrameLayout
+        android:id="@+id/layoutGrabandoAudio"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#88000000"
+        android:visibility="gone"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_modal"
+            android:padding="24dp"
+            android:elevation="8dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/tvRecordingTimer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btnStartRecording"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Grabar"
+                    android:backgroundTint="#4CAF50"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginEnd="16dp" />
+
+                <Button
+                    android:id="@+id/btnCancelarGrabacion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cancelar"
+                    android:backgroundTint="#F44336"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/itemPdfLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/bg_item_border"
+    android:gravity="center_vertical">
+
+    <!-- Icono de PDF -->
+    <ImageView
+        android:id="@+id/pdfIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@android:drawable/ic_menu_save"
+        android:tint="#1E88E5" />
+
+    <!-- Nombre del PDF -->
+    <TextView
+        android:id="@+id/tvPdfName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="12dp"
+        android:text="nombre_del_archivo.pdf"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:maxLines="1"
+        android:ellipsize="end" />
+
+    <!-- Botón Ver -->
+    <Button
+        android:id="@+id/btnVerPdf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ver"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#1E88E5"
+        android:textColor="#FFFFFF" />
+
+    <!-- Botón Eliminar -->
+    <ImageButton
+        android:id="@+id/btnEliminarPdf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_menu_close_clear_cancel"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Eliminar PDF"
+        android:tint="#F44336" />
+</LinearLayout>
